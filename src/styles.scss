@@ -14,5 +14,7 @@ html, body { height: 100%; font-size: 62.5%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 body {
+  display: flex;
   background-image: url('/assets/images/backgroundImg.jpg');
+  justify-content: center;
 }
