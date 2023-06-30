@@ -7,12 +7,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { RouterModule } from '@angular/router';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

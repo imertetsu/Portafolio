@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  .imgProfile{
+  .imgProfile {
     height: 30rem;
     width: 30rem;
   }
@@ -25,9 +25,12 @@
     img{
       height: 3rem;
       width: 3rem;
-      padding: 2rem;
+      margin: 1rem;
     }
   }
+}
+img{
+  max-width: none;
 }
 
 
