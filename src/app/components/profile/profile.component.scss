@@ -1,0 +1,46 @@
+.container{
+  background: rgb(255, 250, 255);
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  padding: 3rem;
+  margin: 4rem;
+}
+.containerImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .imgProfile{
+    height: 30rem;
+    width: 30rem;
+  }
+  .icons{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    img{
+      height: 3rem;
+      width: 3rem;
+      padding: 2rem;
+    }
+  }
+}
+
+
+
+.titleProfile{
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  h1{
+    font-size: 3.5rem;
+  }
+  p{
+    font-size: 2rem;
+  }
+}
+
