@@ -1,0 +1,26 @@
+.container{
+  background: rgb(62, 146, 204);
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  padding: 3rem;
+  margin: 4rem;
+}
+.containerAssureImg{
+  background-color: rgb(255, 250, 255);
+  border-radius: 15rem 15rem 15rem 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  img{
+    height: 10rem;
+    width: 30rem;
+  }
+}
+.containerSnapImg{
+
+  img{
+    height: 30rem;
+    width: 30rem;
+  }
+}

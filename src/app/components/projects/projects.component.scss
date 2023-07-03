@@ -3,4 +3,13 @@
   border-radius: 15px;
   padding: 3rem;
   margin: 4rem;
+  font-size: 3rem !important;
+  .imgContainer{
+    display: flex;
+    justify-content: center;
+  }
+  img{
+    max-width: 90%;
+  }
 }
+
