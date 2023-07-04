@@ -28,6 +28,10 @@
       width: 3rem;
       margin: 1rem;
     }
+    .imgIcon:hover{
+      transform: scale(1.10); /* Ajusta el valor según el efecto deseado */
+      transition: transform 0.5s ease;
+    }
   }
 }
 img{
