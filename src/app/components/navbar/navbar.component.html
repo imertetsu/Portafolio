@@ -1,58 +1,62 @@
 <div class="show-mobile">
-  <div>
-    <button (click)="displayMenu()">
-      <img src="./assets/svg/icon_menu.svg" alt="menu">
-    </button>
-    <a href="">
-      <img src="./assets/svg/logo_yard_sale.svg" alt="logo">
-    </a>
-    <a href="">
-      <img src="./assets/svg/icon_shopping_cart.svg" alt="logo">
-    </a>
-  </div>
-  <!-- la clase activa se activara cuando showMenu sea true -->
-  <div class="show-menu" id="side-menu" [class.active]="showMenu">
+  <nav>
     <ul>
       <li>
-        <a
-        (click)="closeMenu()"
-        routerLinkActive="active"
-        routerLink="home">Home</a>
-      </li>
-      <li><a (click)="closeMenu()" routerLinkActive="active" routerLink="login">Register</a></li>
-      <li ><a (click)="closeMenu()" routerLinkActive="active" routerLink="categories">Categories</a></li>
-    </ul>
-    <button (click)="closeMenu()" >Close</button>
+        <div class="profileNav">
+          <a href="#profile" class="smooth-scroll" routerLinkActive="active" routerLink=""><img src="../../../assets/images/profile.png" alt=""></a>
 
-  </div>
+        </div>
+      </li>
+      <li >
+        <div class="profileNav">
+          <a href="#projects" class="smooth-scroll" routerLinkActive="active" ><img src="../../../assets/images/projects.png" alt=""></a>
+
+        </div>
+      </li>
+      <li >
+        <div class="profileNav">
+          <a routerLinkActive="active" ><img src="../../../assets/images/language.png" alt=""></a>
+
+        </div>
+      </li>
+      <li >
+        <div class="profileNav">
+          <a href="#company" class="smooth-scroll" routerLinkActive="active" ><img src="../../../assets/images/company.png" alt=""></a>
+
+        </div>
+      </li>
+    </ul>
+  </nav>
 </div>
+<div class="containerNav">
   <div class="hide-mobile">
-    <div>
       <nav>
-        <a class="logo" href="">
-          <img src="../../../assets/images/" alt="logo">
-        </a>
         <ul>
           <li>
-            <a
-            routerLinkActive="active"
-            routerLink="">Home</a>
+            <div class="profileNav">
+              <a href="#profile" class="smooth-scroll" routerLinkActive="active" routerLink="">Profile</a>
+              <img src="../../../assets/images/profile.png" alt="">
+            </div>
           </li>
-          <li ><a routerLinkActive="active" >Categories</a></li>
-          <li ><a routerLinkActive="active" >Profile</a></li>
+          <li >
+            <div class="profileNav">
+              <a href="#projects" class="smooth-scroll" routerLinkActive="active" >Projects</a>
+              <img src="../../../assets/images/projects.png" alt="">
+            </div>
+          </li>
+          <li >
+            <div class="profileNav">
+              <a routerLinkActive="active" >Techs</a>
+              <img src="../../../assets/images/language.png" alt="">
+            </div>
+          </li>
+          <li >
+            <div class="profileNav">
+              <a href="#company" class="smooth-scroll" routerLinkActive="active" >Companies</a>
+              <img src="../../../assets/images/company.png" alt="">
+            </div>
+          </li>
         </ul>
       </nav>
-      <div class="info">
-        <ng-template #elseBlock>
-          <a routerLink="/profile" class="account"></a>
-        </ng-template>
-        <div class="cart">
-          <a href="">
-            <img src="./assets/svg/icon_shopping_cart.svg" alt="logo">
-          </a>
-          <span class="counter"></span>
-        </div>
-      </div>
-    </div>
   </div>
-
+</div>

@@ -4,7 +4,11 @@
   flex-direction: row;
   border-radius: 15px;
   padding: 3rem;
-  margin: 4rem;
+  margin-top: 4rem;
+}
+.container:hover{
+  transform: scale(1.05); /* Ajusta el valor según el efecto deseado */
+  transition: transform 0.2s ease;
 }
 .containerAssureImg{
   background-color: rgb(255, 250, 255);

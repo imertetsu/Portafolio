@@ -3,8 +3,8 @@
   background: radial-gradient(circle, rgba(15,136,139,1) 0%, rgba(34,163,24,1) 90%);
   border-radius: 15px;
   padding: 3rem;
-  margin: 4rem;
   font-size: 3rem !important;
+  margin-top: 4rem;
   .imgContainer{
     display: flex;
     justify-content: center;
@@ -12,5 +12,9 @@
   img{
     max-width: 90%;
   }
+}
+.container:hover{
+  transform: scale(1.05); /* Ajusta el valor según el efecto deseado */
+  transition: transform 0.2s ease;
 }
 

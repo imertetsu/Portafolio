@@ -5,7 +5,20 @@
   flex-direction: row;
   border-radius: 15px;
   padding: 3rem;
-  margin: 4rem;
+  margin-top: 13rem;
+
+}
+.container:hover{
+  transform: scale(1.05); /* Ajusta el valor según el efecto deseado */
+  transition: transform 0.2s ease;
+  .imgProfile {
+    background-image: url('../../../assets/images/imert.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 15px;
+  }
 }
 .containerImg{
   display: flex;
@@ -13,6 +26,9 @@
   justify-content: center;
   flex-direction: column;
   .imgProfile {
+    background-image: url('../../../assets/images/knight.png');
+    background-size: cover;
+    background-position: center;
     height: 30rem;
     width: 30rem;
   }
@@ -30,7 +46,7 @@
     }
     .imgIcon:hover{
       transform: scale(1.10); /* Ajusta el valor según el efecto deseado */
-      transition: transform 0.5s ease;
+      transition: transform 0.3s ease;
     }
   }
 }
@@ -44,6 +60,7 @@ img{
   padding: 0 3rem 0 3rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   h2{
     span{
@@ -67,24 +84,13 @@ img{
   flex-wrap: wrap;
   position: relative;
   width: 100%;
-  max-width: 600px;
+  max-width: 60rem;
   border-radius: 6px;
   padding-top: 45px;
   padding-left: 2rem;
   margin-top: 8px;
   overflow: hidden;
   background-color: rgb(15, 15, 16);
-}
-@keyframes loadingAnimation {
-  0% {
-    transform: scaleX(0);
-  }
-  50% {
-    transform: scaleX(1);
-  }
-  100% {
-    transform: scaleX(0);
-  }
 }
 .loading-bar {
   display: inline-block;
@@ -121,6 +127,18 @@ img{
   animation: typing 2s steps(40, end);
   width: 0;
 }
+@keyframes loadingAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
 
 /* Animación para el efecto de escritura */
 @keyframes typing {
@@ -130,4 +148,28 @@ img{
   to {
     width: 100%;
   }
+}
+
+
+/* Medium only */
+/*@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container{
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+/* Large and up
+@media screen and (min-width: 64em) {
+
+}*/
+
+@media screen and (max-width: 1023.99px) {
+  .container{
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 49em) {
+
 }
