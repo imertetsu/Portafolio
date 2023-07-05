@@ -12,7 +12,10 @@ declare global {
 export class NavbarComponent implements OnInit {
 
   showMenu = false;
-
+  isProfileActive = true;
+  isProjectsActive = false;
+  isTechsActive = false;
+  isCompaniesActive = false;
 
   constructor(){
 
@@ -81,14 +84,35 @@ export class NavbarComponent implements OnInit {
       return -c / 2 * (t * (t - 2) - 1) + b;
     };
   }
-
+  activateClass(href:string) {
+    switch(href){
+      case "profile":
+        this.isProjectsActive = false;
+        this.isProfileActive = true;
+        this.isTechsActive = false;
+        this.isCompaniesActive = false;
+        break;
+      case "projects":
+        this.isProjectsActive = true;
+        this.isProfileActive = false;
+        this.isTechsActive = false;
+        this.isCompaniesActive = false;
+        break;
+      case "techs":
+        this.isProjectsActive = false;
+        this.isProfileActive = false;
+        this.isTechsActive = true;
+        this.isCompaniesActive = false;
+        break;
+      case "companies":
+        this.isProjectsActive = false;
+        this.isProfileActive = false;
+        this.isTechsActive = false;
+        this.isCompaniesActive = true;
+    }
+  }
 
   displayMenu(){
-    this.showMenu = true;
-    console.log("menu abierto "+this.showMenu);
-  }
-  closeMenu(){
-    this.showMenu = false;
-    console.log("menu cerrado "+this.showMenu);
+    this.showMenu = !this.showMenu;
   }
 }
