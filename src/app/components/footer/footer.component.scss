@@ -1,5 +1,6 @@
 .container{
-  background: rgb(62, 146, 204);
+  background: rgb(20,210,255);
+  background: radial-gradient(circle, rgba(20,210,255,1) 0%, rgba(15,15,139,1) 100%);
   display: flex;
   flex-direction: row;
   border-radius: 15px;
@@ -12,19 +13,13 @@
 }
 .containerAssureImg{
   background-color: rgb(255, 250, 255);
-  border-radius: 15rem 15rem 15rem 15rem;
+  border-radius: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  img{
-    height: 10rem;
-    width: 30rem;
-  }
+
 }
 .containerSnapImg{
 
-  img{
-    height: 30rem;
-    width: 30rem;
-  }
+
 }

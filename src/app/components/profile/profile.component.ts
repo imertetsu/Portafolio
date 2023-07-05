@@ -47,7 +47,7 @@ export class ProfileComponent implements AfterViewInit, OnInit {
       setTimeout(() => {
         element.classList.remove('text');
         this.addClassActive(index + 1);
-      }, 2000);
+      }, 1500);
     }
   }
   ngOnInit(): void {

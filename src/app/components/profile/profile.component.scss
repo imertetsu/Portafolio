@@ -77,21 +77,6 @@ img{
     font-size: 2rem;
   }
 }
-
-.terminal {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  position: relative;
-  width: 100%;
-  max-width: 60rem;
-  border-radius: 6px;
-  padding-top: 45px;
-  padding-left: 2rem;
-  margin-top: 8px;
-  overflow: hidden;
-  background-color: rgb(15, 15, 16);
-}
 .loading-bar {
   display: inline-block;
   height: 2px;
@@ -99,32 +84,35 @@ img{
   background-color: white;
   animation: loadingAnimation 1.5s infinite;
 }
-.terminal::before {
-  content: "\2023 \2023 \2023";
-  position: absolute;
-  top: 0;
-  left: 0;
+.terminal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  border-radius: 0 0 6px 6px;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  overflow: hidden;
+  background-color: rgb(15, 15, 16);
+}
+.terminalHeader{
   height: 4px;
   background: rgb(58, 58, 58);
   color: #c2c3c4;
-  width: 100%;
-  font-size: 2rem;
+  width: 90%;
+  font-size: 1rem;
   line-height: 0;
   padding: 14px 0;
   text-indent: 4px;
+  border-radius: 6px 6px 0 0;
+  margin-top: 1rem;
 }
 
-.terminal pre {
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-  color: white;
-  padding: 0 1rem 1rem;
-  margin: 0;
-}
 .typing .text {
   display: flex;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 2s steps(40, end);
+  animation: typing 1.5s steps(40, end);
   width: 0;
 }
 @keyframes loadingAnimation {
@@ -150,26 +138,9 @@ img{
   }
 }
 
-
-/* Medium only */
-/*@media screen and (min-width: 480px) and (max-width: 767px) {
-  .container{
-    flex-direction: column;
-    padding: 1rem;
-  }
-}
-
-/* Large and up
-@media screen and (min-width: 64em) {
-
-}*/
-
 @media screen and (max-width: 1023.99px) {
   .container{
     flex-direction: column;
     padding: 1rem;
   }
-}
-@media screen and (min-width: 49em) {
-
 }

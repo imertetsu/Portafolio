@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LanguagesComponent } from './components/languages/languages.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     ProfileComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    LanguagesComponent
   ],
   imports: [
     BrowserModule,
