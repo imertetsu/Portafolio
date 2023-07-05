@@ -1,39 +1,40 @@
-<div class="show-mobile">
-  <nav>
-    <ul>
-      <li>
-        <div class="profileNav">
-          <a href="#profile" class="smooth-scroll" routerLinkActive="active" routerLink=""><img src="../../../assets/images/profile.png" alt=""></a>
+<div class="containerNav">
+  <div class="show-mobile">
+    <nav>
+      <ul>
+        <li>
+          <div class="profileNav">
+            <a href="#profile" class="smooth-scroll" [ngClass]="{ 'active': isProfileActive }" (click)="activateClass('profile')"><img src="../../../assets/images/profile.png" alt=""></a>
 
-        </div>
-      </li>
-      <li >
-        <div class="profileNav">
-          <a href="#projects" class="smooth-scroll" routerLinkActive="active" ><img src="../../../assets/images/projects.png" alt=""></a>
+          </div>
+        </li>
+        <li >
+          <div class="profileNav">
+            <a href="#projects" class="smooth-scroll" [ngClass]="{ 'active': isProjectsActive }" (click)="activateClass('projects')"><img src="../../../assets/images/projects.png" alt=""></a>
 
-        </div>
-      </li>
-      <li >
-        <div class="profileNav">
-          <a routerLinkActive="active" ><img src="../../../assets/images/language.png" alt=""></a>
+          </div>
+        </li>
+        <li >
+          <div class="profileNav">
+            <a><img src="../../../assets/images/language.png" [ngClass]="{ 'active': isTechsActive }" (click)="activateClass('techs')"></a>
 
-        </div>
-      </li>
-      <li >
-        <div class="profileNav">
-          <a href="#company" class="smooth-scroll" routerLinkActive="active" ><img src="../../../assets/images/company.png" alt=""></a>
-
-        </div>
-      </li>
-    </ul>
-  </nav>
+          </div>
+        </li>
+        <li >
+          <div class="profileNav">
+            <a href="#company" class="smooth-scroll" [ngClass]="{ 'active': isCompaniesActive }" (click)="activateClass('companies')"><img src="../../../assets/images/company.png" alt=""></a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 <div class="containerNav">
   <div class="hide-mobile">
       <nav>
         <ul>
           <li>
-            <div class="profileNav">
+            <div class="profileNav" id="profile">
               <a href="#profile" class="smooth-scroll" [ngClass]="{ 'active': isProfileActive }" (click)="activateClass('profile')">Profile</a>
               <img src="../../../assets/images/profile.png" alt="">
             </div>
@@ -46,12 +47,12 @@
           </li>
           <li >
             <div class="profileNav">
-              <a routerLinkActive="active" [ngClass]="{ 'active': isTechsActive }" (click)="activateClass('profile')">Techs</a>
+              <a routerLinkActive="active" [ngClass]="{ 'active': isTechsActive }" (click)="activateClass('techs')">Techs</a>
               <img src="../../../assets/images/language.png" alt="">
             </div>
           </li>
           <li >
-            <div class="profileNav">
+            <div class="profileNav" id="company">
               <a href="#company" class="smooth-scroll"  [ngClass]="{ 'active': isCompaniesActive }" (click)="activateClass('companies')">Companies</a>
               <img src="../../../assets/images/company.png" alt="">
             </div>

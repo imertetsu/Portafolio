@@ -11,7 +11,6 @@ declare global {
 })
 export class NavbarComponent implements OnInit {
 
-  showMenu = false;
   isProfileActive = true;
   isProjectsActive = false;
   isTechsActive = false;
@@ -112,7 +111,4 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-  displayMenu(){
-    this.showMenu = !this.showMenu;
-  }
 }
