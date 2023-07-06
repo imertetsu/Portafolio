@@ -3,6 +3,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
@@ -21,4 +25,18 @@ body {
 }
 app-root{
   width: 80%;
+}
+.modal-content{
+  width: 100rem !important;
+  max-width: 150% !important;
+}
+.modal-dialog{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.swiper-slide{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }

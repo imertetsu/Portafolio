@@ -4,16 +4,9 @@
   border-radius: 15px;
   padding: 3rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-size: 3rem !important;
   margin-top: 4rem;
-  .imgContainer{
-    display: flex;
-    justify-content: center;
-  }
-  img{
-    max-width: 90%;
-  }
 }
 .container:hover{
   transform: scale(1.05); /* Ajusta el valor según el efecto deseado */
@@ -21,17 +14,12 @@
 }
 .titleContainer{
   display: flex;
-  font-size: 5rem;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
-}
-@media screen and (max-width: 1023.99px) {
-  .container{
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .titleContainer{
-    padding: 1rem;
+  padding: 1rem;
+  h1{
+    font-size: 4rem;
   }
 }
+
+

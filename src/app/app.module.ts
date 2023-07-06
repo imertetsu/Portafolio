@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -10,6 +12,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LanguagesComponent } from './components/languages/languages.component';
+import { SwiperModule } from 'swiper/angular';
+import { ProjectComponent } from './components/project/project.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +22,15 @@ import { LanguagesComponent } from './components/languages/languages.component';
     ProfileComponent,
     ProjectsComponent,
     FooterComponent,
-    LanguagesComponent
+    LanguagesComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    ModalModule.forRoot(),
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

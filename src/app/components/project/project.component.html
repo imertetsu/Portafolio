@@ -1,0 +1,32 @@
+<a>
+  <a class="projectTitle" [href]="projectReceived.source" target="_blank"><h1 class="mt-4 text-sm text-gray-700">{{projectReceived.name}}</h1></a>
+  <div
+  class="imgContainer group aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7"
+  (click)="openModal(template)">
+    <img
+    [src]="projectReceived.images[0]"
+    alt="projectImage" class="h-full w-full object-cover object-center group-hover:opacity-75">
+  </div>
+</a>
+
+<ng-template #template>
+
+  <div class="modal-header">
+    <h4 class="modal-title">{{projectReceived.name}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <swiper
+    [config]="config"
+    [navigation]="true"
+    [pagination]="{ clickable: true }"
+    [scrollbar]="{ draggable: true }"
+  >
+    <ng-template swiperSlide *ngFor="let img of projectReceived.images">
+      <img [src]="img" alt="projectImages" class="img-fluid">
+      </ng-template>
+    </swiper>
+  </div>
+</ng-template>

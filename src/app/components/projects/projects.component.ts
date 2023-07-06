@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+
+import { Project } from 'src/app/models/project.model';
 
 @Component({
   selector: 'app-projects',
@@ -7,4 +9,31 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+
+  projectImages: Project[] = [
+    {
+      id: 1,
+      name: 'Bus Escolar Tracker',
+      images: [
+        '/assets/projects/sistemaImages/appPadre/splashPadre.jpeg',
+        '/assets/projects/sistemaImages/appPadre/loginPadreConductor.PNG',
+        '/assets/projects/sistemaImages/appPadre/verifyCode.PNG',
+        '/assets/projects/sistemaImages/appPadre/ubicacionConductorEnAppPadre.PNG',
+        '/assets/projects/sistemaImages/appPadre/navegacionAppPadre.PNG',
+        '/assets/projects/sistemaImages/appPadre/configuracionUbi.PNG',
+        '/assets/projects/sistemaImages/appPadre/registroHijo.PNG',
+      ],
+      source: 'https://github.com/imertetsu/SchoolBusParent'
+    },
+    {
+      id: 2,
+      name: 'Backend Online Store',
+      images: [
+        '/assets/projects/backendOnlineStore/products.png',
+        '/assets/projects/backendOnlineStore/categories.png',
+        '/assets/projects/backendOnlineStore/users.png',
+      ],
+      source: 'https://github.com/imertetsu/backend-onlineStore'
+    }
+  ]
 }
