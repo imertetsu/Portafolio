@@ -3,6 +3,8 @@
   background: radial-gradient(circle, rgba(15,136,139,1) 0%, rgba(34,163,24,1) 90%);
   border-radius: 15px;
   padding: 3rem;
+  display: flex;
+  flex-direction: row;
   font-size: 3rem !important;
   margin-top: 4rem;
   .imgContainer{
@@ -17,4 +19,19 @@
   transform: scale(1.05); /* Ajusta el valor según el efecto deseado */
   transition: transform 0.2s ease;
 }
-
+.titleContainer{
+  display: flex;
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 1023.99px) {
+  .container{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .titleContainer{
+    padding: 1rem;
+  }
+}
