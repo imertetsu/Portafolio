@@ -1,5 +1,8 @@
 <a>
-  <a class="projectTitle" [href]="projectReceived.source" target="_blank"><h1 class="mt-4 text-sm text-gray-700">{{projectReceived.name}}</h1></a>
+  <a class="projectTitle" [href]="projectReceived.source" target="_blank"><h1 class="text-gray-700">{{projectReceived.name}}</h1>
+    <img class="imgIcon" src="../../../assets/images/github1.png" alt="github">
+  </a>
+
   <div
   class="imgContainer group aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7"
   (click)="openModal(template)">

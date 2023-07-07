@@ -20,7 +20,8 @@ export class ProfileComponent implements AfterViewInit, OnInit {
     this.terminalText = [
       '√ Compiled successfully.',
       '√ Browser application bundle generation complete.',
-      `Hi, I'm Imertestsu 👋🏻`,
+      `Hi, I'm Imer Coaguila 👋🏻`,
+      `💻 Software Developer`,
       'Show more...',
     ]
   }
@@ -47,7 +48,7 @@ export class ProfileComponent implements AfterViewInit, OnInit {
       setTimeout(() => {
         element.classList.remove('text');
         this.addClassActive(index + 1);
-      }, 1500);
+      }, 1000);
     }
   }
   ngOnInit(): void {

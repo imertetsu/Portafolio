@@ -112,7 +112,7 @@ img{
   display: flex;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 1.5s steps(40, end);
+  animation: typing 1s steps(40, end);
   width: 0;
 }
 @keyframes loadingAnimation {
@@ -142,5 +142,8 @@ img{
   .container{
     flex-direction: column;
     padding: 1rem;
+  }
+  .titleProfile{
+    padding: 0;
   }
 }

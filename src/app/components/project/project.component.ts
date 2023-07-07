@@ -1,4 +1,4 @@
-import { Component, Input, TemplateRef, Output, EventEmitter } from '@angular/core';
+import { Component, Input, TemplateRef } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import SwiperCore, { SwiperOptions, Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Project } from 'src/app/models/project.model';
