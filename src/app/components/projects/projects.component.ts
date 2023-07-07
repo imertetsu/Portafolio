@@ -34,6 +34,37 @@ export class ProjectsComponent {
         '/assets/projects/backendOnlineStore/users.png',
       ],
       source: 'https://github.com/imertetsu/backend-onlineStore'
+    },
+    {
+      id: 3,
+      name: 'Frontend Online Store',
+      images: [
+        '/assets/projects/frontendOnlineStore/products.png',
+        '/assets/projects/frontendOnlineStore/categories.png',
+        '/assets/projects/frontendOnlineStore/login.png',
+        '/assets/projects/frontendOnlineStore/logged.png',
+      ],
+      source: 'https://github.com/imertetsu/frontend-onlineStore'
+    },
+    {
+      id: 4,
+      name: 'Ninio Mensajero',
+      images: [
+        '/assets/projects/ninioMensajero/home.png',
+        '/assets/projects/ninioMensajero/chooseChar.png',
+        '/assets/projects/ninioMensajero/sendLetter.png',
+        '/assets/projects/ninioMensajero/answerLetter.png',
+        '/assets/projects/ninioMensajero/cms.png',
+      ],
+      source: 'https://github.com/imertetsu/ninio-mensajero'
+    },
+    {
+      id: 5,
+      name: 'Biblioteca Virtual UMSS',
+      images: [
+        '/assets/projects/bibliotecaVirtual/library.avif',
+      ],
+      source: 'https://github.com/imertetsu/biblioteca'
     }
   ]
 }

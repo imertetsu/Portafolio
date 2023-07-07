@@ -24,3 +24,11 @@
     max-height: 80rem;
   }
 }
+
+@media screen and (max-width: 767.99px) {
+  .modal-body{
+    img{
+      max-height: 60rem;
+    }
+  }
+}
