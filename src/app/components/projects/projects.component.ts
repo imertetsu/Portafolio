@@ -44,7 +44,7 @@ export class ProjectsComponent {
         '/assets/projects/frontendOnlineStore/login.png',
         '/assets/projects/frontendOnlineStore/logged.png',
       ],
-      source: 'https://github.com/imertetsu/frontend-onlineStore'
+      source: 'https://github.com/imertetsu/frontOnlineStore'
     },
     {
       id: 4,
