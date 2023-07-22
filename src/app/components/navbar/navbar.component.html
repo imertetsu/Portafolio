@@ -4,24 +4,24 @@
       <ul>
         <li>
           <div class="profileNav">
-            <a href="#profile1" [ngClass]="{ 'active': isProfileActive }" (click)="activateClass('profile')"><img src="../../../assets/images/profile.png" alt=""></a>
+            <a href="#profile1" [ngClass]="{ 'active': activeClass }" (click)="activateClass('profile')"><img src="../../../assets/images/profile.png" alt=""></a>
           </div>
         </li>
         <li >
           <div class="profileNav">
-            <a href="#projects" [ngClass]="{ 'active': isProjectsActive }" (click)="activateClass('projects')"><img src="../../../assets/images/projects.png" alt=""></a>
+            <a href="#projects" [ngClass]="{ 'active': activeClass }" (click)="activateClass('projects')"><img src="../../../assets/images/projects.png" alt=""></a>
 
           </div>
         </li>
         <li >
           <div class="profileNav">
-            <a href="#techs" [ngClass]="{ 'active': isTechsActive }" (click)="activateClass('techs')"><img src="../../../assets/images/language.png" ></a>
+            <a href="#techs" [ngClass]="{ 'active': activeClass }" (click)="activateClass('techs')"><img src="../../../assets/images/language.png" ></a>
 
           </div>
         </li>
         <li >
           <div class="profileNav">
-            <a href="#company1" [ngClass]="{ 'active': isCompaniesActive }" (click)="activateClass('companies')"><img src="../../../assets/images/company.png" alt=""></a>
+            <a href="#company1" [ngClass]="{ 'active': activeClass }" (click)="activateClass('companies')"><img src="../../../assets/images/company.png" alt=""></a>
           </div>
         </li>
       </ul>
@@ -34,25 +34,25 @@
         <ul>
           <li>
             <div class="profileNav" id="profile">
-              <a href="#profile1" [ngClass]="{ 'active': isProfileActive }" (click)="activateClass('profile')">Profile</a>
+              <a href="#profile1" [ngClass]="{ 'active': activeClass && componentActive == 'profile' }" (click)="activateClass('profile')">Profile</a>
               <img src="../../../assets/images/profile.png" alt="profileNav">
             </div>
           </li>
           <li >
             <div class="profileNav">
-              <a href="#projects" [ngClass]="{ 'active': isProjectsActive }" (click)="activateClass('projects')">Projects</a>
+              <a href="#projects" [ngClass]="{ 'active': activeClass && componentActive == 'projects1' }" (click)="activateClass('projects1')">Projects</a>
               <img src="../../../assets/images/projects.png" alt="projectsNav">
             </div>
           </li>
           <li >
             <div class="profileNav">
-              <a href="#techs" [ngClass]="{ 'active': isTechsActive }" (click)="activateClass('techs')">Techs</a>
+              <a href="#techs" [ngClass]="{ 'active': activeClass && componentActive == 'techs'}" (click)="activateClass('techs')">Techs</a>
               <img src="../../../assets/images/language.png" alt="languagesNav">
             </div>
           </li>
           <li >
             <div class="profileNav" id="company">
-              <a href="#company1" [ngClass]="{ 'active': isCompaniesActive }" (click)="activateClass('companies')">Companies</a>
+              <a href="#company1" [ngClass]="{ 'active': activeClass && componentActive == 'companies' }" (click)="activateClass('companies')">Companies</a>
               <img src="../../../assets/images/company.png" alt="companiesNav">
             </div>
           </li>

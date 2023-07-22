@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
-
+import { SharedService } from 'src/app/services/shared.service';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -13,7 +13,7 @@ export class ProfileComponent implements AfterViewInit, OnInit {
   activeButton = false;
   activeShowMore = true;
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
     this.typeElement = document.getElementById('type');
     this.typingElements = document.getElementsByClassName('type');
     this.typingArray = [];
@@ -67,5 +67,12 @@ export class ProfileComponent implements AfterViewInit, OnInit {
       this.typeElement?.classList.add('text');
       console.log(this.typeElement);
     }, 0);
+  }
+  onMouseEnter() {
+    this.sharedService.updateContainerState(true, 'profile');
+  }
+
+  onMouseLeave() {
+    this.sharedService.updateContainerState(false, 'profile');
   }
 }

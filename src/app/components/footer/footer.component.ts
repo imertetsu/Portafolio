@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { SharedService } from 'src/app/services/shared.service';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  constructor(private sharedService: SharedService){}
+
+  onMouseEnter() {
+    this.sharedService.updateContainerState(true, 'companies');
+  }
+
+  onMouseLeave() {
+    this.sharedService.updateContainerState(false, '');
+  }
 }

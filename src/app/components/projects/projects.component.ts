@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Project } from 'src/app/models/project.model';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-projects',
@@ -8,6 +9,10 @@ import { Project } from 'src/app/models/project.model';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
+
+  constructor(private sharedService: SharedService) {
+
+  }
 
 
   projectImages: Project[] = [
@@ -67,4 +72,12 @@ export class ProjectsComponent {
       source: 'https://github.com/imertetsu/biblioteca'
     }
   ]
+
+  onMouseEnter() {
+    this.sharedService.updateContainerState(true, 'projects1');
+  }
+
+  onMouseLeave() {
+    this.sharedService.updateContainerState(false, 'projects1');
+  }
 }
