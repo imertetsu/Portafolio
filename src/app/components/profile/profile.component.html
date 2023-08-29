@@ -13,7 +13,7 @@
         <span class="type" id="type"></span>
       </h2>
       <h2 class="typing">
-        <span class="type" ></span>
+        <span class="type"></span>
       </h2>
       <h1 class="typing">
         <span class="type"></span>
@@ -22,17 +22,17 @@
         <span class="type"></span>
       </h2>
       <h2 class="typing" *ngIf="activeButton == false">
-        <a (click)="clickFirstTimeLoadMore()"><span class="type">
-        </span></a>
-        <div *ngIf="activeShowMore===false" (click)="clickLoadMore()">
+        <button class="type" (click)="clickFirstTimeLoadMore()" title="Load more information about my profile"></button>
+        <button *ngIf="activeShowMore===false" (click)="clickLoadMore()">
           <span>Show more...</span>
-        </div>
+        </button>
       </h2>
+
       <h2 class="typing" *ngIf="activeButton===true">
         <span class="type ">I am a person with the desire to learn more and seek new goals, with the knowledge that I acquired I am able to adapt to carry out the tasks that correspond to my area, ease of communication in a team, intermediate-advanced English, the virtues that I have are punctuality, commitment and a good attitude towards the work that will be carried out.</span>
       </h2>
       <h2 class="typing" *ngIf="activeButton==true">
-        <a (click)="clickLoadMore()"><span>Show less...</span></a>
+        <button (click)="clickLoadMore()"><span>Show less...</span></button>
       </h2>
       <h2 class="loading">
         <span class="loading-bar"></span>
