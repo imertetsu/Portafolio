@@ -1,5 +1,6 @@
-<a>
-  <a class="projectTitle" [href]="projectReceived.source" target="_blank"><h1 class="text-gray-700">{{projectReceived.name}}</h1>
+<div>
+  <a class="projectTitle" [href]="projectReceived.source" target="_blank">
+    <h1 class="text-gray-700">{{projectReceived.name}}</h1>
     <img class="imgIcon" src="../../../assets/images/github1.png" alt="github">
   </a>
   <div
@@ -9,11 +10,11 @@
     [src]="projectReceived.images[0]"
     alt="projectImage" class="h-full w-full object-cover object-center group-hover:opacity-75">
   </div>
-</a>
+</div>
 <ng-template #template>
   <div class="modal-header">
     <h4 class="modal-title">{{projectReceived.name}}</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modalRef.hide()">
+    <button type="button" class="close" aria-label="Close" (click)="modalRef.hide()" style="font-size: 24px; padding: 10px;">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>

@@ -10,16 +10,16 @@ export class LanguagesComponent {
   constructor(private sharedService: SharedService){}
 
   images = [
-    '/assets/images/languages/js.png',
-    '/assets/images/languages/typescript.png',
-    '/assets/images/languages/nodejs.png',
-    '/assets/images/languages/expressIcon.png',
-    '/assets/images/languages/java.png',
-    '/assets/images/languages/spring.png',
+    '/assets/images/languages/js.webp',
+    '/assets/images/languages/typescript.webp',
+    '/assets/images/languages/nodejs.webp',
+    '/assets/images/languages/expressIcon.webp',
+    '/assets/images/languages/java.webp',
+    '/assets/images/languages/spring.webp',
     '/assets/images/languages/file-type-angular.svg',
-    '/assets/images/languages/heroku_original_wordmark_logo_icon_146482.png',
+    '/assets/images/languages/heroku.webp',
     '/assets/images/languages/docker.webp',
-    '/assets/images/languages/github.png'
+    '/assets/images/languages/github.webp'
   ]
 
   onMouseEnter() {

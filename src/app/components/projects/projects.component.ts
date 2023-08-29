@@ -11,9 +11,7 @@ import { SharedService } from 'src/app/services/shared.service';
 export class ProjectsComponent {
 
   constructor(private sharedService: SharedService) {
-
   }
-
 
   projectImages: Project[] = [
     {

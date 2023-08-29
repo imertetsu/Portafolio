@@ -20,10 +20,10 @@ export class ProjectComponent {
     pagination: { clickable: true },
     scrollbar: { draggable: true },
   };
+
   constructor(private modalService: BsModalService) {}
 
   openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template);
   }
-
 }
