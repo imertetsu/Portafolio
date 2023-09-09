@@ -52,7 +52,6 @@ export class ProfileComponent implements AfterViewInit, OnInit {
     }
   }
   ngOnInit(): void {
-    console.log(this.activeButton);
     setTimeout(() => {
       this.addClassActive();
     }, 0);
@@ -62,10 +61,7 @@ export class ProfileComponent implements AfterViewInit, OnInit {
     this.addElementstoList();
     setTimeout(() => {
       this.typeElement = document.getElementById('type');
-      console.log(this.typingElements);
-      console.log(this.typingArray);
       this.typeElement?.classList.add('text');
-      console.log(this.typeElement);
     }, 0);
   }
   onMouseEnter() {
