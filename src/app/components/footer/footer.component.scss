@@ -55,7 +55,10 @@
       color: beige;
     }
   }
+}
 
+.imgContainer:hover{
+  opacity: 0.65;
 }
 
 @media screen and (max-width: 49.999em) {
