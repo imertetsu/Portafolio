@@ -32,11 +32,10 @@ export class NavbarComponent implements OnInit {
     this.sharedService.containerComponent$.subscribe((component: string)=>{
       this.componentActive = component;
 
-      this.hrefNav = "#"+this.componentActive.replace("Style", "");
-      console.log("component active: ", this.hrefNav);
-      console.log();
-
-      this.location.replaceState(this.location.path(), this.hrefNav);
+      this.hrefNav = this.componentActive.replace("Style", "");
+      //console.log("component active: ", this.hrefNav);
+      this.location.replaceState(`#${this.hrefNav}`);
+      //console.log(this.location);
     });
   }
 
