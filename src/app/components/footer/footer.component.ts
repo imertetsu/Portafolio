@@ -26,10 +26,10 @@ export class FooterComponent {
   constructor(private sharedService: SharedService){}
 
   onMouseEnter() {
-    this.sharedService.updateContainerState(true, 'companies');
+    this.sharedService.updateContainerState(true, 'companiesStyle');
   }
 
   onMouseLeave() {
-    this.sharedService.updateContainerState(false, '');
+    this.sharedService.updateContainerState(false, 'companiesStyle');
   }
 }

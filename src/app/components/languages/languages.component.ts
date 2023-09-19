@@ -23,10 +23,10 @@ export class LanguagesComponent {
   ]
 
   onMouseEnter() {
-    this.sharedService.updateContainerState(true, 'techs');
+    this.sharedService.updateContainerState(true, 'techsStyle');
   }
 
   onMouseLeave() {
-    this.sharedService.updateContainerState(false, '');
+    this.sharedService.updateContainerState(false, 'techsStyle');
   }
 }

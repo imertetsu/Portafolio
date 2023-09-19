@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from 'src/app/services/shared.service';
+import { Location } from '@angular/common';
 declare global {
   interface Math {
     easeInOutQuad(t: number, b: number, c: number, d: number): number;
@@ -17,9 +18,11 @@ export class NavbarComponent implements OnInit {
   isTechsActive = false;
   isCompaniesActive = false;
   componentActive:string = '';
+  hrefNav: string = '';
 
-  constructor(private sharedService: SharedService){
-
+  constructor(
+    private sharedService: SharedService,
+    private location: Location){
   }
 
   ngOnInit(): void {
@@ -28,27 +31,37 @@ export class NavbarComponent implements OnInit {
     });
     this.sharedService.containerComponent$.subscribe((component: string)=>{
       this.componentActive = component;
-    })
+
+      this.hrefNav = "#"+this.componentActive.replace("Style", "");
+      console.log("component active: ", this.hrefNav);
+      console.log();
+
+      this.location.replaceState(this.location.path(), this.hrefNav);
+    });
   }
 
   activateClass(href:string) {
-
     switch(href){
-      case "profile":
+      case "profileStyle":
         this.activeClass = true;
-        this.componentActive = "profile";
+        this.componentActive = "profileStyle";
+        this.hrefNav = "#profile"
         break;
-      case "projects1":
+      case "projectsStyle":
         this.activeClass = true;
-        this.componentActive = "projects1";
+        this.componentActive = "projectsStyle";
+        this.hrefNav = "#projects"
         break;
-      case "techs":
+      case "techsStyle":
         this.activeClass = true;
-        this.componentActive = "techs";
+        this.componentActive = "techsStyle";
+        this.hrefNav = "#techs"
+
         break;
-      case "companies":
+      case "companiesStyle":
         this.activeClass = true;
-        this.componentActive = "companies";
+        this.componentActive = "companiesStyle";
+        this.hrefNav = "#companies"
         break;
     }
   }

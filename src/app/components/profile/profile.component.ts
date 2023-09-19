@@ -65,10 +65,10 @@ export class ProfileComponent implements AfterViewInit, OnInit {
     }, 0);
   }
   onMouseEnter() {
-    this.sharedService.updateContainerState(true, 'profile');
+    this.sharedService.updateContainerState(true, 'profileStyle');
   }
 
   onMouseLeave() {
-    this.sharedService.updateContainerState(false, 'profile');
+    this.sharedService.updateContainerState(false, 'profileStyle');
   }
 }

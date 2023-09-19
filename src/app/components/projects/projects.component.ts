@@ -72,10 +72,10 @@ export class ProjectsComponent {
   ]
 
   onMouseEnter() {
-    this.sharedService.updateContainerState(true, 'projects1');
+    this.sharedService.updateContainerState(true, 'projectsStyle');
   }
 
   onMouseLeave() {
-    this.sharedService.updateContainerState(false, 'projects1');
+    this.sharedService.updateContainerState(false, 'projectsStyle');
   }
 }
