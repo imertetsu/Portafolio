@@ -40,19 +40,19 @@
           </li>
           <li >
             <div class="profileNav">
-              <a [href]="hrefNav" [ngClass]="{ 'active': activeClass && componentActive == 'projectsStyle' }" (click)="activateClass('projectsStyle')">Projects</a>
+              <a href="#projects" [ngClass]="{ 'active': activeClass && componentActive == 'projectsStyle' }" (click)="activateClass('projectsStyle')">Projects</a>
               <img src="../../../assets/images/projects.png" alt="projectsNav">
             </div>
           </li>
           <li >
             <div class="profileNav">
-              <a [href]="hrefNav" [ngClass]="{ 'active': activeClass && componentActive == 'techsStyle'}" (click)="activateClass('techsStyle')">Techs</a>
+              <a href="techs" [ngClass]="{ 'active': activeClass && componentActive == 'techsStyle'}" (click)="activateClass('techsStyle')">Techs</a>
               <img src="../../../assets/images/language.png" alt="languagesNav">
             </div>
           </li>
           <li >
             <div class="profileNav" id="companySection">
-              <a [href]="hrefNav" [ngClass]="{ 'active': activeClass && componentActive == 'companiesStyle' }" (click)="activateClass('companiesStyle')">Companies</a>
+              <a href="companies" [ngClass]="{ 'active': activeClass && componentActive == 'companiesStyle' }" (click)="activateClass('companiesStyle')">Companies</a>
               <img src="../../../assets/images/company.png" alt="companiesNav">
             </div>
           </li>

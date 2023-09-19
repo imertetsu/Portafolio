@@ -44,23 +44,19 @@ export class NavbarComponent implements OnInit {
       case "profileStyle":
         this.activeClass = true;
         this.componentActive = "profileStyle";
-        this.hrefNav = "#profile"
         break;
       case "projectsStyle":
         this.activeClass = true;
         this.componentActive = "projectsStyle";
-        this.hrefNav = "#projects"
         break;
       case "techsStyle":
         this.activeClass = true;
         this.componentActive = "techsStyle";
-        this.hrefNav = "#techs"
 
         break;
       case "companiesStyle":
         this.activeClass = true;
         this.componentActive = "companiesStyle";
-        this.hrefNav = "#companies"
         break;
     }
   }
