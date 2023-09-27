@@ -150,3 +150,16 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 440px) {
+  .show-mobile{
+    nav{
+      ul{
+        a{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
