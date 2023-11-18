@@ -26,7 +26,8 @@ export class ProjectsComponent {
         '/assets/projects/sistemaImages/appPadre/configuracionUbi.PNG',
         '/assets/projects/sistemaImages/appPadre/registroHijo.PNG',
       ],
-      source: 'https://github.com/imertetsu/SchoolBusParent'
+      source: 'https://github.com/imertetsu/SchoolBusParent',
+      url: null
     },
     {
       id: 2,
@@ -36,7 +37,8 @@ export class ProjectsComponent {
         '/assets/projects/backendOnlineStore/categories.png',
         '/assets/projects/backendOnlineStore/users.png',
       ],
-      source: 'https://github.com/imertetsu/backend-onlineStore'
+      source: 'https://github.com/imertetsu/backend-onlineStore',
+      url: 'https://backendstore.fly.dev/api/v1/products'
     },
     {
       id: 3,
@@ -47,7 +49,8 @@ export class ProjectsComponent {
         '/assets/projects/frontendOnlineStore/login.png',
         '/assets/projects/frontendOnlineStore/logged.png',
       ],
-      source: 'https://github.com/imertetsu/frontOnlineStore'
+      source: 'https://github.com/imertetsu/frontOnlineStore',
+      url: null
     },
     {
       id: 4,
@@ -59,7 +62,8 @@ export class ProjectsComponent {
         '/assets/projects/ninioMensajero/answerLetter.png',
         '/assets/projects/ninioMensajero/cms.png',
       ],
-      source: 'https://github.com/imertetsu/ninio-mensajero'
+      source: 'https://github.com/imertetsu/ninio-mensajero',
+      url: null
     },
     {
       id: 5,
@@ -67,7 +71,19 @@ export class ProjectsComponent {
       images: [
         '/assets/projects/bibliotecaVirtual/library.avif',
       ],
-      source: 'https://github.com/imertetsu/biblioteca'
+      source: 'https://github.com/imertetsu/biblioteca',
+      url: null
+    },
+    {
+      id: 6,
+      name: 'Lenguas OEI',
+      images: [
+        '/assets/projects/lenguasOei/backgroundOei.jfif',
+        '/assets/projects/lenguasOei/languagesOei.jfif',
+        '/assets/projects/lenguasOei/loginOei.jfif'
+      ],
+      source: null,
+      url: 'https://lenguas.oei.bo/'
     }
   ]
 

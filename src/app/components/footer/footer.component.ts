@@ -21,7 +21,13 @@ export class FooterComponent {
       alt: "assuresoft Logo",
       link: "https://www.assuresoft.com/"
     },
-  ]
+    {
+      name: "OEI",
+      image: "/assets/images/oei.png",
+      alt: "OEI Logo",
+      link: "https://oei.int/"
+    }
+  ];
 
   constructor(private sharedService: SharedService){}
 
