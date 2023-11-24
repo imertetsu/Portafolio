@@ -33,7 +33,7 @@
       <nav>
         <ul>
           <li>
-            <div class="profileNav" id="profileSection">
+            <div class="profileNav" style="margin-left: 1.5rem;">
               <a href="#profile" [ngClass]="{ 'active': activeClass && componentActive == 'profileStyle' }" (click)="activateClass('profileStyle')">Profile</a>
               <img src="../../../assets/images/profile.png" alt="profileNav">
             </div>
@@ -46,13 +46,13 @@
           </li>
           <li >
             <div class="profileNav">
-              <a href="techs" [ngClass]="{ 'active': activeClass && componentActive == 'techsStyle'}" (click)="activateClass('techsStyle')">Techs</a>
+              <a href="#techs" [ngClass]="{ 'active': activeClass && componentActive == 'techsStyle'}" (click)="activateClass('techsStyle')">Techs</a>
               <img src="../../../assets/images/language.png" alt="languagesNav">
             </div>
           </li>
           <li >
-            <div class="profileNav" id="companySection">
-              <a href="companies" title="companies nav" [ngClass]="{ 'active': activeClass && componentActive == 'companiesStyle' }" (click)="activateClass('companiesStyle')">Companies</a>
+            <div class="profileNav" style="margin-right: 1.5rem;">
+              <a href="#companies" title="companies nav" [ngClass]="{ 'active': activeClass && componentActive == 'companiesStyle' }" (click)="activateClass('companiesStyle')">Companies</a>
               <img src="../../../assets/images/company.png" alt="companiesNav">
             </div>
           </li>
