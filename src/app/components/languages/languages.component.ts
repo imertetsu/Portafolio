@@ -19,7 +19,8 @@ export class LanguagesComponent {
     '/assets/images/languages/file-type-angular.svg',
     '/assets/images/languages/heroku.webp',
     '/assets/images/languages/docker.webp',
-    '/assets/images/languages/github.webp'
+    '/assets/images/languages/github.webp',
+    '/assets/images/languages/gitlab.png'
   ]
 
   onMouseEnter() {
