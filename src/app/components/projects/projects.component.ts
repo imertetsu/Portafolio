@@ -83,7 +83,7 @@ export class ProjectsComponent {
         '/assets/projects/lenguasOei/loginOei.jfif'
       ],
       source: null,
-      url: 'https://lenguas.oei.bo/'
+      url: 'https://pruebas.lenguas.oei.int/'
     }
   ]
 
