@@ -1,4 +1,4 @@
-.container{
+.containerSection{
   background: rgb(15,136,139);
   background: linear-gradient(180deg, rgba(15,136,139,1) 16%, rgba(26,51,23,1) 82%);
   display: flex;
@@ -8,7 +8,7 @@
   margin-top: 8.5rem;
 
 }
-.container:hover{
+.containerSection:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
   .imgProfile {
@@ -144,7 +144,7 @@ img{
 }
 
 @media screen and (max-width: 1023.99px) {
-  .container{
+  .containerSection{
     flex-direction: column;
     padding: 1rem;
   }

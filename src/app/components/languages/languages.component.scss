@@ -1,4 +1,4 @@
-.container{
+.containerSection{
   background: rgb(244,255,60);
   background: linear-gradient(162deg, rgba(244,255,60,1) 16%, rgba(99,98,98,1) 82%);
   display: block;
@@ -17,7 +17,7 @@
     font-size: 4rem;
   }
 }
-.container:hover{
+.containerSection:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
 }
@@ -30,7 +30,7 @@
   }
 }
 @media screen and (max-width: 1023.99px) {
-  .container{
+  .containerSection{
     flex-direction: column;
     padding: 1rem;
   }

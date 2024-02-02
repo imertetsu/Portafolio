@@ -78,7 +78,7 @@
     background: linear-gradient(180deg, rgba(15,136,139,1) 0%, rgba(183,196,0,1) 100%);
     border-radius: 15px;
     position: fixed;
-    width: 60%;
+    width: 70%;
     align-content: center;
     z-index: 100;
     > div {
@@ -124,6 +124,7 @@
   }
   .hide-mobile {
     display: none;
+    width: 60%;
   }
 }
 @media screen and (min-width: 50em) and (max-width: 63.9375em) {

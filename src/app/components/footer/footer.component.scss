@@ -1,4 +1,4 @@
-.container{
+.containerSection{
   background: rgb(20,210,255);
   background: radial-gradient(circle, rgba(20,210,255,1) 0%, rgba(15,15,139,1) 100%);
   display: flex;
@@ -7,7 +7,7 @@
   padding: 3rem;
   margin-top: 4rem;
 }
-.container:hover{
+.containerSection:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
 }
@@ -64,7 +64,7 @@
 }
 
 @media screen and (max-width: 49.999em) {
-  .container{
+  .containerSection{
     flex-direction: column;
     padding: 1rem;
   }
