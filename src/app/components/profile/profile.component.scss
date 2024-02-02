@@ -53,8 +53,6 @@ img{
   max-width: none;
 }
 
-
-
 .titleProfile{
   padding: 0 3rem 0 3rem;
   display: flex;
@@ -149,6 +147,22 @@ img{
   }
   .titleProfile{
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .containerSection:hover{
+    .imgProfile {
+      height: 25rem;
+      width: 25rem;
+    }
+  }
+
+  .containerImg{
+    .imgProfile {
+      height: 25rem;
+      width: 25rem;
+    }
   }
 }
 
