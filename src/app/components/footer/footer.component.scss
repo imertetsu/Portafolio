@@ -35,7 +35,7 @@
   justify-content: center;
   img{
     border-radius: 1.5rem;
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 .contact{
@@ -63,7 +63,7 @@
   opacity: 0.65;
 }
 
-@media screen and (max-width: 49.999em) {
+@media screen and (max-width: 440px) {
   .containerSection{
     flex-direction: column;
     padding: 1rem;
