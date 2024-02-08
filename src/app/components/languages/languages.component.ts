@@ -10,17 +10,46 @@ export class LanguagesComponent {
   constructor(private sharedService: SharedService){}
 
   images = [
-    '/assets/images/languages/js.webp',
-    '/assets/images/languages/typescript.webp',
-    '/assets/images/languages/nodejs.webp',
-    '/assets/images/languages/expressIcon.webp',
-    '/assets/images/languages/java.webp',
-    '/assets/images/languages/spring.webp',
-    '/assets/images/languages/file-type-angular.svg',
-    '/assets/images/languages/heroku.webp',
-    '/assets/images/languages/docker.webp',
-    '/assets/images/languages/github.webp',
-    '/assets/images/languages/gitlab.png'
+    {
+      image: '/assets/images/languages/file-type-angular.svg',
+      imageTitle: 'Angular'
+    },
+    {
+      image: '/assets/images/languages/java.webp',
+      imageTitle: 'Java'
+    },
+    {
+      image: '/assets/images/languages/spring.webp',
+      imageTitle: 'Spring'
+    },
+    {
+      image: '/assets/images/languages/python.png',
+      imageTitle: 'Python'
+    },
+    {
+      image: '/assets/images/languages/apache-spark.png',
+      imageTitle: 'Apache Spark'
+    },
+    {
+      image: '/assets/images/languages/typescript.webp',
+      imageTitle: 'TypeScript'
+    },
+    {
+      image: '/assets/images/languages/heroku.webp',
+      imageTitle: 'Heroku'
+    },
+    {
+      image: '/assets/images/languages/docker.webp',
+      imageTitle: 'Docker'
+    },
+    {
+      image: '/assets/images/languages/github.webp',
+      imageTitle: 'Github'
+    },
+    {
+      image: '/assets/images/languages/gitlab.png',
+      imageTitle: 'Gitlab'
+    },
   ]
 
   onMouseEnter() {
