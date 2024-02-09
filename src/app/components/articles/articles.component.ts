@@ -32,11 +32,11 @@ export class ArticlesComponent {
 
 
   onMouseEnter() {
-    this.sharedService.updateContainerState(true, 'projectsStyle');
+    this.sharedService.updateContainerState(true, 'articlesStyle');
   }
 
   onMouseLeave() {
-    this.sharedService.updateContainerState(false, 'projectsStyle');
+    this.sharedService.updateContainerState(false, 'articlesStyle');
   }
 }
 

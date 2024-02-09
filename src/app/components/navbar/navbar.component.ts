@@ -49,6 +49,10 @@ export class NavbarComponent implements OnInit {
         this.activeClass = true;
         this.componentActive = "projectsStyle";
         break;
+      case "articlesStyle":
+        this.activeClass = true;
+        this.componentActive = "articlesStyle";
+        break;
       case "techsStyle":
         this.activeClass = true;
         this.componentActive = "techsStyle";
