@@ -16,7 +16,7 @@ export class ArticlesComponent {
       id: 1,
       name: 'Dockerizing a Database with docker-compose',
       images: [
-        '/assets/projects/sistemaImages/appPadre/splashPadre.jpeg',
+        '/assets/images/articles/docker-compose.webp',
       ],
       source: 'https://medium.com/@imertpro/setup-a-database-with-a-docker-compose-file-and-connect-it-to-a-spring-java-app-71db3c2c2711',
     },
@@ -24,7 +24,7 @@ export class ArticlesComponent {
       id: 2,
       name: 'Introduction to Apache Spark and its data structures',
       images: [
-        '/assets/projects/backendOnlineStore/products.png',
+        '/assets/images/articles/apache-spark.png',
       ],
       source: 'https://medium.com/@imertpro/introduction-to-apache-spark-rdds-and-dataframes-with-python-d72f1eb4a0f8',
     }

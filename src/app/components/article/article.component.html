@@ -1,17 +1,14 @@
 <div>
-    <a class="projectTitle" [href]="articleReceived.source" target="_blank" *ngIf="articleReceived.source !== null; else nameProject">
-      <h1 class="text-gray-700">{{articleReceived.name}}</h1>
-      <img class="imgIcon" src="../../../assets/images/github1.png" alt="github">
+    <a [href]="articleReceived.source" target="_blank" *ngIf="articleReceived.source !== null">
+        <div
+        class="imgContainer group aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img
+            [src]="articleReceived.images[0]"
+            alt="projectImage" class="h-full w-full object-cover object-center group-hover:opacity-75">
+        </div>
+        <a class="projectTitle" [href]="articleReceived.source" target="_blank" *ngIf="articleReceived.source !== null">
+            <h1 class="text-gray-700">{{articleReceived.name}}</h1>
+            <img class="imgIcon" src="../../../assets/images/github1.png" alt="github">
+        </a>
     </a>
-    <ng-template #nameProject>
-      <div class="projectTitle">
-        <h1 class="text-gray-700">{{articleReceived.name}}</h1>
-      </div>
-    </ng-template>
-    <div
-    class="imgContainer group aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-      <img
-      [src]="articleReceived.images[0]"
-      alt="projectImage" class="h-full w-full object-cover object-center group-hover:opacity-75">
-    </div>
   </div>

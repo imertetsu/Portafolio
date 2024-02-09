@@ -1,10 +1,10 @@
 <section class="containerSection" id="projects" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
     <div class="titleContainer">
       <h1>
-        Articles written
+        Written Articles
       </h1>
     </div>
-    <div class="pictureContainer grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+    <div class="pictureContainer grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
         <app-article [articleReceived]="article" *ngFor="let article of articles"></app-article>
     </div>
 </section>
