@@ -1,0 +1,41 @@
+.projectTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    h1{
+      font-size: 2rem;
+      margin: 0;
+    }
+  
+  }
+  .imgContainer{
+    display: flex;
+    justify-content: center;
+    img{
+      max-width: 90%;
+      height: 50rem;
+    }
+  }
+  .modal-body{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    img{
+      max-height: 80rem;
+    }
+  }
+  .imgIcon{
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+  }
+  
+  @media screen and (max-width: 767.99px) {
+    .modal-body{
+      img{
+        max-height: 60rem;
+      }
+    }
+  }
+  

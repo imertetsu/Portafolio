@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Article } from 'src/app/models/article.model';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-articles',
@@ -6,5 +8,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./articles.component.scss']
 })
 export class ArticlesComponent {
+  constructor(private sharedService: SharedService) {
+  }
 
+  articles: Article[] = [
+    {
+      id: 1,
+      name: 'Dockerizing a Database with docker-compose',
+      images: [
+        '/assets/projects/sistemaImages/appPadre/splashPadre.jpeg',
+      ],
+      source: 'https://medium.com/@imertpro/setup-a-database-with-a-docker-compose-file-and-connect-it-to-a-spring-java-app-71db3c2c2711',
+    },
+    {
+      id: 2,
+      name: 'Introduction to Apache Spark and its data structures',
+      images: [
+        '/assets/projects/backendOnlineStore/products.png',
+      ],
+      source: 'https://medium.com/@imertpro/introduction-to-apache-spark-rdds-and-dataframes-with-python-d72f1eb4a0f8',
+    }
+  ];
+
+
+  onMouseEnter() {
+    this.sharedService.updateContainerState(true, 'projectsStyle');
+  }
+
+  onMouseLeave() {
+    this.sharedService.updateContainerState(false, 'projectsStyle');
+  }
 }
+
