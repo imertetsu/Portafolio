@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 import { SwiperModule } from 'swiper/angular';
 import { ProjectComponent } from './components/project/project.component';
+import { ArticlesComponent } from './components/articles/articles.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProjectComponent } from './components/project/project.component';
     ProjectsComponent,
     FooterComponent,
     LanguagesComponent,
-    ProjectComponent
+    ProjectComponent,
+    ArticlesComponent
   ],
   imports: [
     BrowserModule,
