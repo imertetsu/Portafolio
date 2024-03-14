@@ -1,6 +1,5 @@
 .containerSection{
-  background: rgb(244,255,60);
-  background: linear-gradient(162deg, rgba(244,255,60,1) 16%, rgba(99,98,98,1) 82%);
+  background: rgba(244,255,60,1) 16%;
   display: block;
   border-radius: 15px;
   padding: 3rem;
@@ -25,7 +24,7 @@
 .pictureContainer{
   padding: 0 1rem;
   img{
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
     max-width: 50%;
   }
 }
