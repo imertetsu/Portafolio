@@ -4,8 +4,8 @@
       Companies I worked with & Contact
     </h1>
   </div>
-  <div class="pictureContainer grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-    <picture *ngFor="let company of companies" class="flex items-center justify-center">
+  <div class="pictureContainer grid grid-cols-3 gap-x-6 gap-y-10 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+    <picture *ngFor="let company of companies">
       <a class="imgContainer "
       [href]="company.link" target="_blank">
         <img class="h-full w-full object-cover object-center group-hover:opacity-75"
