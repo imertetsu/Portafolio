@@ -40,6 +40,7 @@
 }
 .contact{
   display: flex;
+  align-items: center;
   h2{
     margin: 1rem 1rem 1rem 0;
     color: beige;
@@ -66,12 +67,13 @@
   .contact{
     h2{
       font-size: 1.5rem;
-      margin: 1rem 0 0 0;
+      margin: 1rem 0 1rem 0;
     }
     .contact-content{
       img{
         height: 2rem;
         width: 2rem;
+        margin: 0 0.5rem 0 1rem;
       }
     }
   }
