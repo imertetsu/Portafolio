@@ -23,11 +23,6 @@
             <a href="#techs" title="techs nav" [ngClass]="{ 'active': activeClass && componentActive == 'techsStyle' }" (click)="activateClass('techsStyle')"><img src="../../../assets/images/language.png" alt="techs nav"></a>
           </div>
         </li>
-        <li>
-          <div class="profileNav">
-            <a href="#companies" title="companies nav" [ngClass]="{ 'active': activeClass && componentActive == 'companiesStyle' }" (click)="activateClass('companiesStyle')"><img src="../../../assets/images/company.png" alt="companies nav"></a>
-          </div>
-        </li>
       </ul>
     </nav>
   </div>
@@ -37,33 +32,31 @@
       <nav>
         <ul>
           <li>
-            <div class="profileNav" style="margin-left: 1.5rem;">
-              <a href="#profile" [ngClass]="{ 'active': activeClass && componentActive == 'profileStyle' }" (click)="activateClass('profileStyle')">Profile</a>
+            <div class="profileNav">
+              <a href="#profile" [ngClass]="{ 'active': activeClass && componentActive == 'profileStyle' }" (click)="activateClass('profileStyle')"
+              class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Profile</a>
               <img src="../../../assets/images/profile.png" alt="profileNav">
             </div>
           </li>
           <li>
             <div class="profileNav">
-              <a href="#projects" [ngClass]="{ 'active': activeClass && componentActive == 'projectsStyle' }" (click)="activateClass('projectsStyle')">Projects</a>
+              <a href="#projects" [ngClass]="{ 'active': activeClass && componentActive == 'projectsStyle' }" (click)="activateClass('projectsStyle')"
+              class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Projects</a>
               <img src="../../../assets/images/projects.png" alt="projectsNav">
             </div>
           </li>
           <li>
             <div class="profileNav">
-              <a href="#articles" [ngClass]="{ 'active': activeClass && componentActive == 'articlesStyle' }" (click)="activateClass('articlesStyle')">Articles</a>
+              <a href="#articles" [ngClass]="{ 'active': activeClass && componentActive == 'articlesStyle' }" (click)="activateClass('articlesStyle')"
+              class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Articles</a>
               <img src="../../../assets/images/articles.png" alt="articles nav">
             </div>
           </li>
           <li>
             <div class="profileNav">
-              <a href="#techs" [ngClass]="{ 'active': activeClass && componentActive == 'techsStyle'}" (click)="activateClass('techsStyle')">Techs</a>
+              <a href="#techs" [ngClass]="{ 'active': activeClass && componentActive == 'techsStyle'}" (click)="activateClass('techsStyle')"
+              class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Techs</a>
               <img src="../../../assets/images/language.png" alt="languagesNav">
-            </div>
-          </li>
-          <li>
-            <div class="profileNav" style="margin-right: 1.5rem;">
-              <a href="#companies" title="companies nav" [ngClass]="{ 'active': activeClass && componentActive == 'companiesStyle' }" (click)="activateClass('companiesStyle')">Companies</a>
-              <img src="../../../assets/images/company.png" alt="companiesNav">
             </div>
           </li>
         </ul>
