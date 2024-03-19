@@ -22,7 +22,7 @@
   padding: 0 1rem;
   img{
     border-radius: 0.5rem;
-    max-width: 50%;
+    width: 100px;
   }
 }
 @media screen and (max-width: 1023.99px) {
@@ -38,5 +38,10 @@
 @media screen and (max-width: 440px) {
   .containerSection{
     padding: 1rem;
+  }
+  .pictureContainer{
+    img{
+      width: 80px;
+    }
   }
 }

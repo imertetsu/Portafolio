@@ -27,7 +27,7 @@
   display: flex;
   padding: 0 1rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   .imgContainer{
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@
   }
   img{
     border-radius: 0.5rem;
-    width: 30%;
+    width: 100px;
   }
 }
 .contact{
@@ -79,7 +79,7 @@
   }
   .pictureContainer{
     img{
-      width: 90%;
+      width: 70px;
     }
   }
 }
