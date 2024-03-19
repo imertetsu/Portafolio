@@ -25,6 +25,13 @@
     max-height: 80rem;
   }
 }
+
+.project-description {
+  max-height: 75vh; /* Establece una altura máxima para el div */
+  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido se desborda */
+  width: calc(100% - 40px); /* Ajusta el ancho del div para que coincida con el ancho del modal-body (20px de margen a cada lado) */
+  margin: 0 auto; /* Centra el div horizontalmente dentro del modal-body */
+}
 .imgIcon{
   height: 2rem;
   width: 2rem;

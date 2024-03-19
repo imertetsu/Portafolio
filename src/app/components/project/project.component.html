@@ -22,20 +22,34 @@
 </div>
 <ng-template #template>
   <div class="modal-header">
-    <h4 class="modal-title">{{projectReceived.name}}</h4>
+    <h2 class="modal-title"><b>{{projectReceived.name}}</b></h2>
     <button type="button" class="close" aria-label="Close" (click)="modalRef.hide()" style="font-size: 24px; padding: 10px;">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
   <div class="modal-body">
     <swiper
-    [config]="config"
-    [navigation]="true"
-    [pagination]="{ clickable: true }"
-    [scrollbar]="{ draggable: true }"
-  >
-    <ng-template swiperSlide *ngFor="let img of projectReceived.images">
-      <img [src]="img" alt="projectImages" class="img-fluid">
+      [config]="config"
+      [navigation]="true"
+      [pagination]="{ clickable: true }"
+      [scrollbar]="{ draggable: true }"
+    >
+      <!-- Descripción del proyecto -->
+      <ng-template swiperSlide>
+        <div class="project-description">
+          <h4>{{projectReceived.projectDescription.description}}</h4>
+          <h4>
+            <ul *ngFor="let feature of projectReceived.projectDescription.features">
+                <li><b>{{feature.name}}</b></li>
+                <p>{{feature.description}}</p>
+            </ul>
+          </h4>
+        </div>
+      </ng-template>
+      
+      <!-- Imágenes del proyecto -->
+      <ng-template swiperSlide *ngFor="let img of projectReceived.images">
+        <img [src]="img" alt="projectImages" class="img-fluid">
       </ng-template>
     </swiper>
   </div>
