@@ -63,13 +63,13 @@ export class ProjectsComponent {
       id: 1,
       name: 'School Bus Tracker (SBT)',
       images: [
-        '/assets/projects/sistemaImages/appPadre/splashPadre.jpeg',
-        '/assets/projects/sistemaImages/appPadre/loginPadreConductor.PNG',
-        '/assets/projects/sistemaImages/appPadre/verifyCode.PNG',
-        '/assets/projects/sistemaImages/appPadre/ubicacionConductorEnAppPadre.PNG',
-        '/assets/projects/sistemaImages/appPadre/navegacionAppPadre.PNG',
-        '/assets/projects/sistemaImages/appPadre/configuracionUbi.PNG',
-        '/assets/projects/sistemaImages/appPadre/registroHijo.PNG',
+        '/assets/projects/sistemaImages/pageHome.PNG',
+        '/assets/projects/sistemaImages/loginPage.PNG',
+        '/assets/projects/sistemaImages/registerPage.PNG',
+        '/assets/projects/sistemaImages/schoolPage.PNG',
+        '/assets/projects/sistemaImages/conductoresPage.PNG',
+        '/assets/projects/sistemaImages/padresPage.PNG',
+        '/assets/projects/sistemaImages/busesPge.PNG',
       ],
       source: 'https://github.com/imertetsu/SchoolBusParent',
       url: null,
@@ -110,7 +110,7 @@ export class ProjectsComponent {
     },
     {
       id: 3,
-      name: '(SBT) Parent Application',
+      name: '(SBT) Parent App',
       images: [
         '/assets/projects/sistemaImages/appPadre/splashPadre.jpeg',
         '/assets/projects/sistemaImages/appPadre/loginPadreConductor.PNG',
@@ -159,7 +159,7 @@ export class ProjectsComponent {
     },
     {
       id: 1,
-      name: '(SBT) Driver Application',
+      name: '(SBT) Driver App',
       images: [
         '/assets/projects/sistemaImages/appConductor/splashCond.jpeg',
         '/assets/projects/sistemaImages/appConductor/loginPadreConductor.PNG',
@@ -209,12 +209,15 @@ export class ProjectsComponent {
       id: 6,
       name: 'Lenguas OEI',
       images: [
-        '/assets/projects/lenguasOei/backgroundOei.jfif',
-        '/assets/projects/lenguasOei/languagesOei.jfif',
-        '/assets/projects/lenguasOei/loginOei.jfif'
+        '/assets/projects/lenguasOei/backgroundOei.PNG',
+        '/assets/projects/lenguasOei/pageIni.PNG',
+        '/assets/projects/lenguasOei/loginPage.PNG',
+        '/assets/projects/lenguasOei/registerPage.PNG',
+        '/assets/projects/lenguasOei/languagesPage.PNG',
+
       ],
       source: null,
-      url: 'https://pruebas.lenguas.oei.int/',
+      url: 'https://lenguas-ui.languages.imertetsu.me/',
       projectDescription: {
         name: "Aplicación de Pizzería",
         description: "The Pizzeria application is a platform designed to manage the entire ordering and management process of a pizzeria. From user management to creating and tracking pizza orders, the app offers a comprehensive solution to meet the needs of customers and staff alike.",

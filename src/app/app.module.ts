@@ -17,6 +17,8 @@ import { ProjectComponent } from './components/project/project.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { ArticleComponent } from './components/article/article.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,14 +29,15 @@ import { ArticleComponent } from './components/article/article.component';
     LanguagesComponent,
     ProjectComponent,
     ArticlesComponent,
-    ArticleComponent
+    ArticleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     ModalModule.forRoot(),
-    SwiperModule
+    SwiperModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

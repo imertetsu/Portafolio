@@ -1,24 +1,53 @@
 <section class="containerSection" id="companies">
-  <div class="titleContainer">
-    <h1 class="sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-      Companies I worked with & Contact
-    </h1>
-  </div>
-  <div class="pictureContainer grid grid-cols-3 gap-x-6 gap-y-10 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-    <picture *ngFor="let company of companies">
-      <a class="imgContainer "
-      [href]="company.link" target="_blank">
-        <img class="h-full w-full object-cover object-center group-hover:opacity-75"
-        [src]="company.image" [alt]="company.alt">
-      </a>
-    </picture>
-  </div>
   <hr>
   <div class="contact">
-    <h2 class="sm:text-xl md:text-2xl lg:text-3xl">Contact me at:</h2>
-    <a class="contact-content" href="mailto:imertpro@gmail.com">
-      <img src="../../../assets/images/gmail.png" alt="">
-      <h2 class="sm:text-xl md:text-2xl lg:text-3xl">imertpro@gmail.com</h2>
-    </a>
+    <div class="flex flex-col sm:flex-row">
+      <div class="sm:ml-4 md:mr-4 xl:ml-12 xl:mt-12 pl-4">
+        <h3 class="sm:text-xl md:text-2xl lg:text-3xl pb-2"><b>Contact me at:</b></h3>
+        <ul class="list-none flex flex-col pl-0">
+          <li class="flex items-center">
+            <a href="mailto:imertpro@gmail.com" class="flex items-center hover:text-white transition-colors duration-300">
+              <fa-icon class="sm:text-xl md:text-2xl pl-2" [icon]="faMailReply" size="2x" style="color: #212529;"></fa-icon>
+              <div class="ml-2">
+                <h4 class="sm:text-xl md:text-2xl lg:text-3xl pl-2" style="color: #212529;">
+                  imertpro@gmail.com
+                </h4>
+              </div>
+            </a>
+          </li>
+          <li class="flex items-center pt-2">
+            <fa-icon class="sm:text-xl md:text-2xl pl-2" [icon]="faWhatsapp" size="2x"></fa-icon>
+            <div class="ml-2">
+              <h4 class="sm:text-xl md:text-2xl lg:text-3xl pl-2">
+                (+51) 913418772 - (+591) 71453087
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="sm:ml-4 max-sm:pt-2 md:ml-4 xl:ml-12 xl:mt-12 col-md-4 flex pl-4" style="width: 25%;">
+        <div class="footer-col flex flex-col">
+          <h3 class="sm:text-xl md:text-2xl lg:text-3xl pb-2"><b>Social Media:</b></h3>
+          <div class="flex justify-around">
+            <a href="" class="sm:text-xl md:text-2xl pl-2" style="color: #212529;"><fa-icon [icon]="faLinkedin" size="3x" class="hover:text-white transition-colors duration-300 pr-2"></fa-icon></a>
+            <a href="" class="sm:text-xl md:text-2xl pl-2" style="color: #212529;"><fa-icon [icon]="faGithub" size="3x" class="hover:text-white transition-colors duration-300 pl-2"></fa-icon></a>
+          </div>
+        </div>
+      </div>
+      <div class="sm:ml-4 max-sm:pt-4 md:ml-4 xl:ml-12 xl:mt-12 col-md-4 pl-4 flex flex-wrap flex-grow w-full">
+        <div class="footer-col flex flex-col">
+          <h3 class="sm:text-xl md:text-2xl lg:text-3xl pb-2"><b>Companies I worked with:</b></h3>
+          <div class="pictureContainer flex justify-around">
+            <picture *ngFor="let company of companies">
+              <a class="imgContainer "
+              [href]="company.link" target="_blank">
+                <img class="h-full w-full object-cover object-center group-hover:opacity-75"
+                [src]="company.image" [alt]="company.alt">
+              </a>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

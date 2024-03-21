@@ -1,11 +1,15 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
 import { SharedService } from 'src/app/services/shared.service';
+import { faWhatsapp, faMailchimp, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements AfterViewInit, OnInit {
+  faGithub = faGithub;
+  faLinkedin = faLinkedin
   typingElements: HTMLCollectionOf<Element>;
   typingArray: any[];
   typeElement: HTMLElement | null;
