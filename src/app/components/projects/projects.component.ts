@@ -203,36 +203,24 @@ export class ProjectsComponent {
       source: null,
       url: 'https://ui.languages.imertetsu.me',
       projectDescription: {
-        name: "Lenguas Project",
-        description: "The Pizzeria application is a platform designed to manage the entire ordering and management process of a pizzeria. From user management to creating and tracking pizza orders, the app offers a comprehensive solution to meet the needs of customers and staff alike.",
+        name: "Lenguas OEI",
+        description: "Lenguas OEI is a project that belongs to the OEI organization focused on promoting the learning and preservation of indigenous languages such as Aymara, Guarani, Moxeño Quechua, among others. The project aims to provide resources and tools for individuals to learn and appreciate these languages, fostering cultural diversity and linguistic heritage. Some tasks I performed during this project were: ",
         features: [
           {
-            name: "Gestión de Usuarios",
-            description: "La aplicación permite la gestión de distintos tipos de usuarios, incluyendo administradores, clientes y chefs. Cada tipo de usuario tiene acceso a funcionalidades específicas de acuerdo a su rol en el sistema."
+            name: "Dockerization of System Components",
+            description: "I dockerized the system service, backend, frontend, and database components, enabling seamless deployment to production environments. This containerization approach ensures consistency and reliability across different deployment environments."
           },
           {
-            name: "Catálogo de Pizzas",
-            description: "La plataforma cuenta con un amplio catálogo de pizzas disponibles para que los clientes elijan y realicen sus pedidos."
+            name: "Website Enhancement",
+            description: "I updated various visual elements of the website, including colors, logos, fonts, styles, and more. These enhancements aimed to improve the overall user experience and align the website's design with the project's branding and objectives."
           },
           {
-            name: "Órdenes de Pizzas",
-            description: "Los clientes pueden realizar y rastrear sus órdenes de pizzas a través de la aplicación. Los chefs reciben notificaciones en tiempo real sobre los pedidos entrantes y pueden actualizar el estado de preparación de las pizzas."
+            name: "Feature Development and Bug Fixes",
+            description: "I contributed to the development of new features, addressing user needs and requirements. Additionally, I identified and resolved bugs within the system, ensuring its stability and functionality."
           },
           {
-            name: "Endpoints RESTful",
-            description: "La aplicación implementa endpoints RESTful para realizar operaciones CRUD (Create, Read, Update, Delete) en entidades clave como usuarios, pizzas y órdenes de pizzas. Estos endpoints admiten los métodos HTTP estándar, incluyendo GET, POST, PUT y DELETE."
-          },
-          {
-            name: "Seguridad Basada en Roles",
-            description: "Se ha implementado un sistema de seguridad robusto que asigna roles a los usuarios, como administrador, cliente y chef. Cada rol tiene acceso restringido a ciertas funcionalidades y datos de la aplicación."
-          },
-          {
-            name: "Arquitectura Stateless",
-            description: "La aplicación sigue una arquitectura stateless, lo que significa que no almacena ningún estado de sesión en el servidor. En su lugar, utiliza tokens JWT (JSON Web Tokens) para autenticar y autorizar solicitudes de usuarios. Estos tokens se incluyen en los encabezados de las solicitudes HTTP para mantener la seguridad y la integridad de los datos."
-          },
-          {
-            name: "Endpoints Públicos",
-            description: "Aunque la mayoría de los endpoints requieren autenticación, la aplicación también cuenta con algunos endpoints públicos que pueden ser accedidos sin autenticación, como la consulta del catálogo de pizzas."
+            name: "Code Refactoring",
+            description: "I conducted code refactoring activities to improve the codebase's readability, maintainability, and performance. By restructuring and optimizing existing code, I enhanced the overall quality and efficiency of the system."
           }
         ]
       }
