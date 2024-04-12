@@ -75,7 +75,7 @@ export class ProjectsComponent {
       url: "https://service.busescolartracking.imertetsu.me",
       projectDescription: {
         name: "School Bus Tracker",
-        description: "The School Bus Tracker is an application designed to connect two main applications: the parent app and the driver app. Its main purpose is to facilitate school route management, allowing drivers to transmit their real-time location through the driver app, and parents to view this location in the parent app.",
+        description: "The School Bus Tracker is a system designed to connect two main applications: the parent app and the driver app. Its main purpose is to facilitate school route management, allowing drivers to transmit their real-time location through the driver app, and parents to view this location in the parent app.",
         "features": [
           {
             name: "Schools, Drivers, and Parents Management",
@@ -159,37 +159,33 @@ export class ProjectsComponent {
       source: null,
       url: null,
       projectDescription: {
-        name: "(SBT) Driver App",
-        description: "La aplicación de Pizzería es una plataforma robusta diseñada para gestionar todo el proceso de pedidos y gestión de una pizzería. Desde la administración de usuarios hasta la creación y seguimiento de órdenes de pizzas, la aplicación ofrece una solución integral para satisfacer las necesidades de clientes y personal por igual.",
+        name: "Driver App",
+        description: "The Driver App plays a crucial role in the School Bus Tracker system, empowering bus drivers with essential tools to ensure the smooth and safe transportation of students. Drivers can log in using their registered phone number, granting access to features designed to streamline their workflow and enhance their efficiency.",
         features: [
           {
-            name: "Gestión de Usuarios",
-            description: "La aplicación permite la gestión de distintos tipos de usuarios, incluyendo administradores, clientes y chefs. Cada tipo de usuario tiene acceso a funcionalidades específicas de acuerdo a su rol en el sistema."
+            name: "Phone Number Authentication",
+            description: "Drivers can securely log in using their registered phone number, ensuring that only authorized personnel have access to the app's functionalities."
           },
           {
-            name: "Catálogo de Pizzas",
-            description: "La plataforma cuenta con un amplio catálogo de pizzas disponibles para que los clientes elijan y realicen sus pedidos."
+            name: "Real-Time Location Tracking",
+            description: "The app enables drivers to view their current location as well as the locations of the schools they serve and the students' pickup/drop-off points. This feature aids drivers in navigating their routes efficiently and ensuring timely arrivals and departures."
           },
           {
-            name: "Órdenes de Pizzas",
-            description: "Los clientes pueden realizar y rastrear sus órdenes de pizzas a través de la aplicación. Los chefs reciben notificaciones en tiempo real sobre los pedidos entrantes y pueden actualizar el estado de preparación de las pizzas."
+            name: "Student Entry and Exit Logging",
+            description: "Drivers can log entries and exits of students on their bus, recording timestamps and location details. These records are synchronized with the Parent App, allowing parents to track their child's bus activities in real-time."
           },
+          // {
+          //   name: "Route Optimization",
+          //   description: "The Driver App provides route optimization functionalities to help drivers plan the most efficient routes, minimizing travel time and fuel consumption. This ensures timely pickups and drop-offs while optimizing overall transportation efficiency."
+          // },
+          // {
+          //   name: "Communication with Parents",
+          //   description: "Drivers can communicate with parents via the app, providing updates on route changes, delays, or emergencies. This facilitates transparent communication between drivers and parents, fostering trust and confidence in the transportation system."
+          // },
           {
-            name: "Endpoints RESTful",
-            description: "La aplicación implementa endpoints RESTful para realizar operaciones CRUD (Create, Read, Update, Delete) en entidades clave como usuarios, pizzas y órdenes de pizzas. Estos endpoints admiten los métodos HTTP estándar, incluyendo GET, POST, PUT y DELETE."
+            name: "User-Friendly Interface",
+            description: "The Driver App features an intuitive interface designed for ease of use and accessibility. Drivers can access essential features and information quickly, allowing them to focus on their primary task of safe and efficient driving."
           },
-          {
-            name: "Seguridad Basada en Roles",
-            description: "Se ha implementado un sistema de seguridad robusto que asigna roles a los usuarios, como administrador, cliente y chef. Cada rol tiene acceso restringido a ciertas funcionalidades y datos de la aplicación."
-          },
-          {
-            name: "Arquitectura Stateless",
-            description: "La aplicación sigue una arquitectura stateless, lo que significa que no almacena ningún estado de sesión en el servidor. En su lugar, utiliza tokens JWT (JSON Web Tokens) para autenticar y autorizar solicitudes de usuarios. Estos tokens se incluyen en los encabezados de las solicitudes HTTP para mantener la seguridad y la integridad de los datos."
-          },
-          {
-            name: "Endpoints Públicos",
-            description: "Aunque la mayoría de los endpoints requieren autenticación, la aplicación también cuenta con algunos endpoints públicos que pueden ser accedidos sin autenticación, como la consulta del catálogo de pizzas."
-          }
         ]
       }
     },
