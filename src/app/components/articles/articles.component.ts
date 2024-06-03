@@ -27,6 +27,14 @@ export class ArticlesComponent {
         '/assets/images/articles/apache-spark.png',
       ],
       source: 'https://medium.com/@imertpro/introduction-to-apache-spark-rdds-and-dataframes-with-python-d72f1eb4a0f8',
+    },
+    {
+      id: 3,
+      name: 'Functional Programming Key Concepts with Java',
+      images: [
+        '/assets/images/articles/functional-programming.png',
+      ],
+      source: 'https://medium.com/@imertpro/functional-programming-with-java-key-concepts-e0922d7a8f7a',
     }
   ];
 
