@@ -29,7 +29,7 @@ export class FooterComponent {
     },
     {
       name: "Assuresoft",
-      image: "/assets/images/assuresoft.png",
+      image: "/assets/images/assureLogo.jpg",
       alt: "assuresoft Logo",
       link: "https://www.assuresoft.com/"
     },

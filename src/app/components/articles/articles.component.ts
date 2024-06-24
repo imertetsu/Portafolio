@@ -35,6 +35,14 @@ export class ArticlesComponent {
         '/assets/images/articles/functional-programming.png',
       ],
       source: 'https://medium.com/@imertpro/functional-programming-with-java-key-concepts-e0922d7a8f7a',
+    },
+    {
+      id: 4,
+      name: 'Understanding Apache Kafka Architecture',
+      images: [
+        '/assets/images/articles/apache-kafka.png',
+      ],
+      source: 'https://medium.com/@imertpro/understanding-apache-kafka-architecture-91a8cdcdf978',
     }
   ];
 
