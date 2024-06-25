@@ -11,16 +11,28 @@ export class LanguagesComponent {
 
   images = [
     {
-      image: '/assets/images/languages/file-type-angular.svg',
-      imageTitle: 'Angular'
-    },
-    {
       image: '/assets/images/languages/java.webp',
       imageTitle: 'Java'
     },
     {
       image: '/assets/images/languages/spring.webp',
       imageTitle: 'Spring'
+    },
+    {
+      image: '/assets/images/languages/mysql.png',
+      imageTitle: 'MySQL Database'
+    },
+    {
+      image: '/assets/images/languages/aws.webp',
+      imageTitle: 'AWS'
+    },
+    {
+      image: '/assets/images/languages/apache-kafka.png',
+      imageTitle: 'Apache Kafka'
+    },
+    {
+      image: '/assets/images/languages/file-type-angular.svg',
+      imageTitle: 'Angular'
     },
     {
       image: '/assets/images/languages/python.png',
@@ -31,12 +43,12 @@ export class LanguagesComponent {
       imageTitle: 'Apache Spark'
     },
     {
-      image: '/assets/images/languages/typescript.webp',
-      imageTitle: 'TypeScript'
+      image: '/assets/images/languages/js.webp',
+      imageTitle: 'JavaScript'
     },
     {
-      image: '/assets/images/languages/heroku.webp',
-      imageTitle: 'Heroku'
+      image: '/assets/images/languages/typescript.webp',
+      imageTitle: 'TypeScript'
     },
     {
       image: '/assets/images/languages/docker.webp',
