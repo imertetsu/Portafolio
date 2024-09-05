@@ -18,9 +18,9 @@ export class ProjectsComponent {
       id: 7,
       name: 'Pizzeria API',
       images: [
-        '/assets/projects/backendPizzeria/swaggerui1.PNG',
-        '/assets/projects/backendPizzeria/swaggerui2.PNG',
-        '/assets/projects/backendPizzeria/swaggerui3.PNG',
+        '/assets/projects/backendPizzeria/swaggerui1.webp',
+        '/assets/projects/backendPizzeria/swaggerui2.webp',
+        '/assets/projects/backendPizzeria/swaggerui3.webp',
       ],
       source: 'https://github.com/imertetsu/pizzeria',
       url: 'https://service.pizzeria.imertetsu.me/api/swagger-ui/index.html',
