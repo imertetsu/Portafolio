@@ -1,11 +1,11 @@
 <div>
   <a class="projectTitle" [href]="projectReceived.source" target="_blank" *ngIf="projectReceived.source !== null; else nameProject">
-    <h1 class="text-gray-700">{{projectReceived.name}}</h1>
+    <h1 class="text-black">{{projectReceived.name}}</h1>
     <img class="imgIcon" src="../../../assets/images/github1.png" alt="github">
   </a>
   <ng-template #nameProject>
     <div class="projectTitle">
-      <h1 class="text-gray-700">{{projectReceived.name}}</h1>
+      <h1 class="text-black">{{projectReceived.name}}</h1>
     </div>
   </ng-template>
   <div
@@ -16,7 +16,7 @@
     alt="projectImage" class="h-full w-full object-cover object-center group-hover:opacity-75">
   </div>
   <a class="projectTitle" [href]="projectReceived.url" target="_blank" *ngIf="projectReceived.url !== null">
-    <h1 class="text-gray-700" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;">{{projectReceived.url}}</h1>
+    <h1 class="text-black" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;">{{projectReceived.url}}</h1>
     <img class="imgIcon" src="../../../assets/images/link.png" alt="github">
   </a>
 </div>
