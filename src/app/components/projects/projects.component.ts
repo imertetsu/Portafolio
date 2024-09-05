@@ -193,11 +193,11 @@ export class ProjectsComponent {
       id: 6,
       name: 'Lenguas OEI',
       images: [
-        '/assets/projects/lenguasOei/backgroundOei.PNG',
-        '/assets/projects/lenguasOei/pageIni.PNG',
-        '/assets/projects/lenguasOei/loginPage.PNG',
-        '/assets/projects/lenguasOei/registerPage.PNG',
-        '/assets/projects/lenguasOei/languagesPage.PNG',
+        '/assets/projects/lenguasOei/backgroundOei.webp',
+        '/assets/projects/lenguasOei/pageIni.webp',
+        '/assets/projects/lenguasOei/loginPage.webp',
+        '/assets/projects/lenguasOei/registerPage.webp',
+        '/assets/projects/lenguasOei/languagesPage.webp',
 
       ],
       source: null,
